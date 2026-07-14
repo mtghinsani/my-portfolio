@@ -5,6 +5,9 @@ import { Mail, Send } from "lucide-react";
 import { GithubIcon, LinkedinIcon, InstagramIcon, TwitterIcon } from "./social-icons";
 import SectionWrapper, { SectionHeading } from "./section-wrapper";
 import { personalInfo, socialLinks } from "@/lib/data";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
+import { toast } from "sonner";
 
 const iconMap: Record<string, React.ElementType> = {
   github: GithubIcon,
@@ -31,6 +34,46 @@ const item = {
 };
 
 export default function Contact() {
+
+    const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  try {
+    await emailjs.send(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+      {
+        name: form.name,
+        email: form.email,
+        message: form.message,
+      },
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+    );
+
+    toast.success("Message sent successfully!", {
+    description: "Thanks for reaching out! I'll get back to you soon.",
+    });
+
+    setForm({
+      name: "",
+      email: "",
+      message: "",
+    });
+
+  } catch (error) {
+    console.error(error);
+    toast.error("Failed to send message.", {
+    description: "Please try again later.",
+    });
+  }
+};
+
   return (
     <SectionWrapper id="contact">
       <SectionHeading
@@ -99,7 +142,7 @@ export default function Contact() {
           className="glass rounded-2xl p-8"
         >
           <form
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={sendEmail}
             className="flex flex-col gap-5"
           >
             <motion.div variants={item}>
@@ -112,6 +155,10 @@ export default function Contact() {
               <input
                 type="text"
                 id="name"
+                value={form.name}
+                onChange={(e) =>
+                  setForm({ ...form, name: e.target.value })
+                }
                 placeholder="Your name"
                 className="w-full rounded-xl border border-[#ffffff08] bg-[#ffffff05] px-4 py-3 text-sm text-foreground placeholder:text-muted/50 transition-colors focus:border-[#00e5ff40] focus:outline-none focus:ring-1 focus:ring-[#00e5ff30]"
               />
@@ -127,6 +174,10 @@ export default function Contact() {
               <input
                 type="email"
                 id="email"
+                value={form.email}
+                onChange={(e) =>
+                  setForm({ ...form, email: e.target.value })
+                }
                 placeholder="your@email.com"
                 className="w-full rounded-xl border border-[#ffffff08] bg-[#ffffff05] px-4 py-3 text-sm text-foreground placeholder:text-muted/50 transition-colors focus:border-[#00e5ff40] focus:outline-none focus:ring-1 focus:ring-[#00e5ff30]"
               />
@@ -142,6 +193,10 @@ export default function Contact() {
               <textarea
                 id="message"
                 rows={4}
+                value={form.message}
+                onChange={(e) =>
+                  setForm({ ...form, message: e.target.value })
+                }
                 placeholder="Tell me about your project..."
                 className="w-full resize-none rounded-xl border border-[#ffffff08] bg-[#ffffff05] px-4 py-3 text-sm text-foreground placeholder:text-muted/50 transition-colors focus:border-[#00e5ff40] focus:outline-none focus:ring-1 focus:ring-[#00e5ff30]"
               />
