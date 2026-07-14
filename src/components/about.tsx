@@ -8,8 +8,8 @@ import { personalInfo } from "@/lib/data";
 const stats = [
   { label: "Years of Experience", value: "3+" },
   { label: "Projects Completed", value: "20+" },
-  { label: "Technologies", value: "15+" },
-  { label: "GitHub Contributions", value: "500+" },
+  { label: "Technologies", value: "10+" },
+  { label: "Experiences", value: "25+" },
 ];
 
 const container = {

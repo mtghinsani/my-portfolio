@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, Download, Mail } from "lucide-react";
 import { personalInfo, typingTexts } from "@/lib/data";
+import Image from "next/image";
 
 function TypingAnimation() {
   const [textIndex, setTextIndex] = useState(0);
@@ -136,9 +137,13 @@ export default function Hero() {
 
             {/* Avatar placeholder */}
             <div className="relative flex h-56 w-56 items-center justify-center overflow-hidden rounded-full border-2 border-[#ffffff12] bg-gradient-to-br from-[#0d0d1a] to-[#12122a] md:h-72 md:w-72 lg:h-80 lg:w-80">
-              <div className="gradient-text text-6xl font-bold md:text-7xl lg:text-8xl">
-                MTI
-              </div>
+              <Image
+                src="/images/myself.png"
+                alt="Muhammad Teguh Insani"
+                width={320}
+                height={320}
+                className="h-full w-full object-cover"
+              />
             </div>
 
             {/* Floating badges */}

@@ -45,8 +45,8 @@ export default function Header() {
             href="#"
             className="text-lg font-bold tracking-tight"
           >
-            <span className="gradient-text">teguh</span>
-            <span className="text-foreground">.dev</span>
+            <span className="text-foreground">Muhammad Teguh </span>
+            <span className="gradient-text">Insani</span>
           </a>
 
           {/* Desktop nav */}

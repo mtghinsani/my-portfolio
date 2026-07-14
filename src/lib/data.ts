@@ -14,7 +14,7 @@ export const personalInfo = {
   name: "Muhammad Teguh Insani",
   role: "Information Technology Student | Front-End Developer | AI & IoT Enthusiast",
   shortRole: "Front-End Dev",
-  email: "muhammadteguh@email.dev",
+  email: "insani1416@gmail.com",
   location: "Jakarta, Indonesia",
   bio: "I build elegant digital experiences that live at the intersection of design and technology. Passionate about crafting interfaces that feel alive.",
   longBio:
@@ -24,10 +24,9 @@ export const personalInfo = {
 };
 
 export const socialLinks = [
-  { name: "GitHub", url: "https://github.com/muhammadteguh", icon: "github" },
-  { name: "LinkedIn", url: "https://linkedin.com/in/muhammadteguh", icon: "linkedin" },
-  { name: "Instagram", url: "https://instagram.com/muhammadteguh", icon: "instagram" },
-  { name: "Twitter", url: "https://twitter.com/muhammadteguh", icon: "twitter" },
+  { name: "GitHub", url: "https://github.com/mtghinsani", icon: "github" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/muhammad-teguh-insani-b271772b6/", icon: "linkedin" },
+  { name: "Instagram", url: "https://https://www.instagram.com/mtghinsanii_/", icon: "instagram" },
 ];
 
 export interface Skill {
@@ -64,7 +63,6 @@ export const skillCategories: SkillCategory[] = [
     color: "cyan",
     skills: [
       { name: "Node.js", level: 80, category: "Backend" },
-      { name: "Express.js", level: 78, category: "Backend" },
       { name: "REST APIs", level: 82, category: "Backend" },
     ],
   },
@@ -105,12 +103,10 @@ export const skillCategories: SkillCategory[] = [
     icon: Wrench,
     color: "cyan",
     skills: [
-      { name: "Git", level: 88, category: "Tools" },
       { name: "GitHub", level: 86, category: "Tools" },
       { name: "Figma", level: 84, category: "Tools" },
       { name: "VS Code", level: 92, category: "Tools" },
       { name: "Arduino IDE", level: 78, category: "Tools" },
-      { name: "Postman", level: 80, category: "Tools" },
     ],
   },
 ];
@@ -128,27 +124,27 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "AI Chatbot",
+    title: "GenQA - NutriLearn",
     description:
       "Modern AI chatbot built with Next.js and Python, featuring real-time conversational capabilities powered by natural language processing.",
     longDescription:
       "Full-stack AI chat application with natural language understanding, context-aware responses, and a clean conversational interface.",
     image: "/images/project-1.png",
     techStack: ["Next.js", "Python", "TypeScript", "Tailwind CSS", "NLP"],
-    githubUrl: "https://github.com/muhammadteguh/ai-chatbot",
-    liveUrl: "https://ai-chatbot.vercel.app",
+    githubUrl: "#",
+    liveUrl: "#",
     featured: true,
   },
   {
-    title: "SmartCompost IoT",
+    title: "AiCI Website Redesign",
     description:
-      "IoT-based smart compost management system using ESP32 and cloud technology for real-time monitoring and automation.",
+      "Revamped the Artificial Intelligence Indonesia website with a modern UI, responsive layout, and enhanced user experience.",
     longDescription:
-      "Smart compost monitoring system with sensor data visualization, automated alerts, and cloud-based dashboard for remote management.",
+      "Redesigned the Artificial Intelligence Indonesia (AiCI) website to deliver a cleaner interface, improved navigation, and a responsive design while maintaining the organization's branding and identity.",
     image: "/images/project-2.png",
-    techStack: ["ESP32", "Arduino", "Cloud IoT", "React", "Firebase"],
-    githubUrl: "https://github.com/muhammadteguh/smartcompost",
-    liveUrl: "https://smartcompost.vercel.app",
+    techStack: ["HTML", "JavaScript", "PHP", "Bootstrap", "MySQL"],
+    githubUrl: "#",
+    liveUrl: "#",
     featured: true,
   },
   {
@@ -159,8 +155,8 @@ export const projects: Project[] = [
       "Accessibility-focused speech-to-text system combining ESP32 hardware with AI-powered speech recognition to assist people with hearing impairments.",
     image: "/images/project-3.png",
     techStack: ["ESP32", "Python", "AI Speech Recognition", "React", "Firebase"],
-    githubUrl: "https://github.com/muhammadteguh/heartext",
-    liveUrl: "https://heartext.vercel.app",
+    githubUrl: "#",
+    liveUrl: "#",
     featured: true,
   },
   {
@@ -171,8 +167,8 @@ export const projects: Project[] = [
       "Inclusive education platform leveraging AI to create personalized, adaptive learning experiences tailored for children with Down syndrome.",
     image: "/images/project-4.png",
     techStack: ["Next.js", "Python", "TensorFlow", "PostgreSQL", "Tailwind CSS"],
-    githubUrl: "https://github.com/muhammadteguh/eduvista",
-    liveUrl: "https://eduvista.vercel.app",
+    githubUrl: "#",
+    liveUrl: "#",
     featured: false,
   },
   {
@@ -183,8 +179,8 @@ export const projects: Project[] = [
       "Engaging 2D educational game built with Godot Engine featuring interactive lessons, progress tracking, and gamified learning mechanics.",
     image: "/images/project-5.png",
     techStack: ["Godot Engine", "GDScript", "2D Graphics", "Game Design"],
-    githubUrl: "https://github.com/muhammadteguh/superedu",
-    liveUrl: "https://superedu-game.vercel.app",
+    githubUrl: "#",
+    liveUrl: "#",
     featured: false,
   },
 ];
@@ -201,7 +197,7 @@ export const experiences: Experience[] = [
   {
     title: "Internal Affairs Minister",
     company: "HMIT Telkom University Jakarta",
-    period: "2024 — Present",
+    period: "Jan 2026 — Present",
     description:
       "Managing internal organizational affairs and ensuring smooth coordination across all divisions within the HMIT student organization.",
     highlights: [
@@ -213,7 +209,7 @@ export const experiences: Experience[] = [
   {
     title: "Public Relations Staff",
     company: "HMIT Telkom University Jakarta",
-    period: "2024 — 2025",
+    period: "Jun 2025 — Dec 2025",
     description:
       "Managed external communications and built strategic partnerships to enhance the organization's visibility and outreach.",
     highlights: [
@@ -223,27 +219,15 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    title: "Marketing Crew",
-    company: "Telkom University Jakarta",
-    period: "2024 — 2025",
+    title: "Vlogcast Team Lead",
+    company: "Marketing Crew SMB Telkom Jakarta",
+    period: "Jul 2026 - Present",
     description:
       "Contributed to marketing campaigns and promotional activities for university events and student initiatives.",
     highlights: [
       "Created marketing materials for university-wide events",
       "Coordinated promotional campaigns across digital platforms",
       "Analyzed campaign performance and engagement metrics",
-    ],
-  },
-  {
-    title: "Field & Logistics Coordinator",
-    company: "Vlogcast Division",
-    period: "2023 — 2024",
-    description:
-      "Led field operations and logistics planning for content production, ensuring seamless execution of on-site activities.",
-    highlights: [
-      "Coordinated on-site logistics for video production shoots",
-      "Managed field equipment and resource allocation",
-      "Ensured timely delivery of project milestones",
     ],
   },
 ];

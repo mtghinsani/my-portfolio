@@ -119,7 +119,7 @@ export default function Skills() {
       >
         <p className="flex items-center justify-center gap-2 text-sm text-muted">
           <ChevronRight size={14} className="text-[#00e5ff]" />
-          Always learning — currently exploring Rust and WebAssembly
+          Always learning — currently exploring Internet of Things
         </p>
       </motion.div>
     </SectionWrapper>

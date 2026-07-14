@@ -27,8 +27,8 @@ export default function Experience() {
     <SectionWrapper id="experience">
       <SectionHeading
         label="Experience"
-        title="My Professional Journey"
-        description="Key roles and experiences that have shaped my career."
+        title="Organizational Experience"
+        description="Leadership roles and organizational experiences that have strengthened my teamwork, communication, and project management skills."
       />
 
       <div className="relative">

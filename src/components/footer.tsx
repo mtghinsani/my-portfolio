@@ -26,8 +26,8 @@ export default function Footer() {
             viewport={{ once: true }}
             className="text-xl font-bold"
           >
-            <span className="gradient-text">teguh</span>
-            <span className="text-foreground">.dev</span>
+            <span className="text-foreground">Muhammad Teguh </span>
+            <span className="gradient-text">Insani</span>
           </motion.div>
 
           {/* Social links */}
