@@ -20,7 +20,7 @@ export const personalInfo = {
   longBio:
     "I am an Information Technology student at Telkom University Jakarta who is passionate about Front-End Development, Artificial Intelligence, Internet of Things (IoT), and Graphic Design. I enjoy creating modern, responsive, and interactive web applications while continuously exploring new technologies and improving my problem-solving skills.",
   avatar: "/images/avatar.png",
-  resumeUrl: "#contact",
+  resumeUrl: "/cv/CV - Muhammad Teguh Insani.pdf",
 };
 
 export const socialLinks = [
@@ -52,9 +52,9 @@ export const skillCategories: SkillCategory[] = [
       { name: "CSS", level: 92, category: "Frontend" },
       { name: "JavaScript", level: 90, category: "Frontend" },
       { name: "TypeScript", level: 85, category: "Frontend" },
-      { name: "React", level: 88, category: "Frontend" },
+      { name: "React", level: 80, category: "Frontend" },
       { name: "Next.js", level: 86, category: "Frontend" },
-      { name: "Tailwind CSS", level: 93, category: "Frontend" },
+      { name: "Tailwind CSS", level: 87, category: "Frontend" },
     ],
   },
   {
@@ -63,7 +63,7 @@ export const skillCategories: SkillCategory[] = [
     color: "cyan",
     skills: [
       { name: "Node.js", level: 80, category: "Backend" },
-      { name: "REST APIs", level: 82, category: "Backend" },
+      { name: "REST APIs", level: 80, category: "Backend" },
     ],
   },
   {
@@ -73,9 +73,9 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: "JavaScript", level: 90, category: "Languages" },
       { name: "TypeScript", level: 85, category: "Languages" },
-      { name: "Python", level: 78, category: "Languages" },
-      { name: "PHP", level: 70, category: "Languages" },
-      { name: "C++", level: 65, category: "Languages" },
+      { name: "Python", level: 90, category: "Languages" },
+      { name: "PHP", level: 93, category: "Languages" },
+      { name: "C++", level: 85, category: "Languages" },
     ],
   },
   {
@@ -83,7 +83,7 @@ export const skillCategories: SkillCategory[] = [
     icon: Database,
     color: "cyan",
     skills: [
-      { name: "MySQL", level: 80, category: "Database" },
+      { name: "MySQL", level: 90, category: "Database" },
       { name: "PostgreSQL", level: 76, category: "Database" },
       { name: "Firebase", level: 82, category: "Database" },
     ],

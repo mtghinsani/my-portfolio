@@ -109,6 +109,7 @@ export default function Hero() {
           >
             <a
               href={personalInfo.resumeUrl}
+              download
               className="group inline-flex items-center justify-center gap-2.5 rounded-full border border-[#00e5ff30] bg-[#00e5ff08] px-7 py-3.5 text-sm font-medium text-[#00e5ff] transition-all duration-300 hover:border-[#00e5ff60] hover:bg-[#00e5ff18] hover:shadow-[0_0_30px_#00e5ff15]"
             >
               <Download size={16} className="transition-transform group-hover:-translate-y-0.5" />
